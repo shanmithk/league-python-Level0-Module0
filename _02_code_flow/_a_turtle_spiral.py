@@ -12,7 +12,14 @@ def get_random_color():
 if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
-    
+    fred=turtle.Turtle()
+    fred.speed(10)
+    fred.color('green')
+    for i in range(50):
+        fred.color(get_random_color())
+        fred.forward(5*i)
+        fred.right(360/7)
+        fred.width(i)
     # Make a new turtle
     
     # This code sets our shape to a turtle
